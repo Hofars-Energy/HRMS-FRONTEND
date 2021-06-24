@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./todo.css";
 
+
 class Form extends Component {
   constructor(props) {
     super(props);
@@ -176,19 +177,21 @@ class Form extends Component {
 
   render() {
     return (
-      <div>
+      <div className="form-style">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+        <div className="form-group">
         <form onSubmit={this.handleSubmit}>
-          <h1> Adding RMS Request </h1>
+          <h1>Adding RMS Request</h1>
           <br />
-          <label> FirstName: </label>{" "}
+          <label>FirstName:</label>
           <input
             type="text"
             value={this.state.firstName}
             onChange={this.firsthandler}
             placeholder="FirstName..."
           />{" "}
-          <br />
-          <label> LastName: </label>{" "}
+          {/* <br /> */}
+          <label>LastName:</label>
           <input
             type="text"
             value={this.state.lastName}
@@ -206,7 +209,8 @@ class Form extends Component {
             <option value="New"> New </option>
             <option value="Replacement"> Replacement </option>{" "}
           </select>
-          <br /> \<label> Department: </label>
+          {/* <br /> */}
+          <label> Department: </label>
           <select
             onChange={this.state.depthandler}
             defaultValue="Select Department"
@@ -229,7 +233,7 @@ class Form extends Component {
             <option value="a"> A </option> <option value="b"> B </option>{" "}
             <option value="c"> C </option>{" "}
           </select>
-          <br />
+          {/* <br /> */}
           <label> Cost Centre: </label>
           <select
             onChange={this.state.costCentrehandler}
@@ -251,7 +255,7 @@ class Form extends Component {
             <option value="a"> A </option> <option value="b"> B </option>{" "}
             <option value="c"> C </option>{" "}
           </select>
-          <br />
+          {/* <br /> */}
           <label> Role: </label>
           <select onChange={this.rolehandler} defaultValue="Select Role">
             {" "}
@@ -269,7 +273,7 @@ class Form extends Component {
             <option value="IS"> Internship </option>{" "}
             <option value="part-time"> Part - time </option>{" "}
           </select>
-          <br />
+          {/* <br /> */}
           <label> Branch: </label>
           <select onChange={this.branchhandler} defaultValue="Select Branch">
             {" "}
@@ -285,7 +289,7 @@ class Form extends Component {
             <option value="a"> A </option> <option value="b"> B </option>{" "}
             <option value="c"> C </option>{" "}
           </select>
-          <br />
+          {/* <br /> */}
           <label> Business Type: </label>
           <select
             onChange={this.businessTypehandler}
@@ -304,7 +308,7 @@ class Form extends Component {
             <option value="male"> Male </option>{" "}
             <option value="female"> Female </option>{" "}
           </select>
-          <br />
+          {/* <br /> */}
           <label> Due Date: </label>{" "}
           <input
             type="date"
@@ -317,9 +321,10 @@ class Form extends Component {
             type="number"
             value={this.state.experience}
             onChange={this.experiencehandler}
-            placeholder="Experience..."
+            placeholder="Experience.."
+            style={{width:"150px"}}
           />{" "}
-          <br />
+          {/* <br /> */}
           {/* <label>Qualification: </label> <input list="Qualification" >
           <datalist id="cars">
             <option value="Diploma" />
@@ -328,33 +333,41 @@ class Form extends Component {
             <option value="Post Graduate" />
             <option value="other" />
           </datalist> */}
-          <label> CTC( in lakhs): </label> <label> Min: </label>{" "}
+          <label style={{padding : "0px",width:"110px"}}> CTC( in lakhs): </label> 
+          <label style={{padding : "0px",width:"50px"}}> Min: </label>{" "}
           <input
             type="number"
             value={this.state.ctc}
             onChange={this.ctchandler2}
           />{" "}
-          <label> Max: </label>{" "}
+          <label style={{padding : "0px",width:"50px"}}> Max: </label>{" "}
           <input
             type="number"
             value={this.state.ctc}
             onChange={this.ctchandler}
           />{" "}
           <br />
-          <label> Specialization: - </label>
+          <label style={{margin:"15px 15px 0px 250px" }}> Specialization: - </label>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox"  id="s1" name="s1" value="ReactJs"  />
+             ReactJs
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox"  id="s2" name="s2" value="NodeJs"  />
+            NodeJs
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox"  id="s3" name="s3" value="Python"  />
+            Python
+          </div>
           <br />
-          <input type="checkbox" id="s1" name="s1" value="Reactjs" />
-          <label for="s1"> Reactjs </label>
-          <br />
-          <input type="checkbox" id="s2" name="s2" value="Nodejs" />
-          <label for="s2"> Nodejs </label>
-          <br />
-          <input type="checkbox" id="s3" name="s3" value="python" />
-          <label for="vehicle3"> python </label>
-          <br />
+          <div className="text-center">
           <input type="reset" />
           <input type="submit" value="Submit" />
+          </div>
+          
         </form>
+        </div>
       </div>
     );
   }

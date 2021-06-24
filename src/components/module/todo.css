@@ -7,8 +7,9 @@ h1 {
   font-size: 38px;
 }
 
+
 input[type="text"] {
-  width: 40%;
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -20,7 +21,7 @@ input[type="text"] {
 }
 
 input[type="date"] {
-  width: 40%;
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -74,22 +75,23 @@ input[type="reset"] {
 }
 
 input[type="checkbox"] {
-  background-color: #ddd;
+  background-color: rgb(202, 183, 183);
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 8px 0;
+  margin: 1px 0;
   /* cursor: pointer; */
   border-radius: 16px;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 22px;
+  margin-right: 10px;
 }
 
 select {
-  width: 40%;
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -119,8 +121,17 @@ select {
 }
 
 label {
+  margin: 15px;
   width: 180px;
   clear: left;
   text-align: left;
   padding-right: 10px;
+  padding-left: 40px;
 }
+
+br {
+  display: block;
+  margin: 10px 0;
+  line-height:22px;
+}
+
