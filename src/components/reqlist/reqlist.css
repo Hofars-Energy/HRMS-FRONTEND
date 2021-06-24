@@ -1,0 +1,25 @@
+body {
+}
+
+.reqList {
+  height: 100vh;
+  position: relative;
+}
+.maintable {
+  position: relative;
+  left: 10px;
+}
+
+.yo {
+  color: white;
+  font-size: 5vh;
+  float: right;
+  position: relative;
+  margin: 5vh;
+  right: 15vh;
+}
+
+.yo:hover {
+  color: black;
+  transition: all 0.35s ease-out;
+}

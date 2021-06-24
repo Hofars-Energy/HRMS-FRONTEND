@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 to="/Careers"
-                className="nav-links"
+                className="nav-links "
                 onClick={closeMobileMenu}
               >
                 Careers
@@ -55,19 +55,10 @@ const Navbar = () => {
                 ATS
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                to="/Projects"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Projects
-              </Link>
-            </li>
             <li>
               <Link
                 to="/Login"
-                className="nav-links-mobile"
+                className="nav-links-mobile "
                 onClick={closeMobileMenu}
                 style={{ textDecoration: "none" }}
               >
@@ -77,6 +68,7 @@ const Navbar = () => {
           </ul>
           {button1 && (
             <Button
+              className="float-right"
               buttonStyle="btn--outline"
               link="/login"
               style={{ textDecoration: "none" }}

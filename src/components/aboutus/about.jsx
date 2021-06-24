@@ -11,11 +11,11 @@ export default function AboutUs() {
         style={{
           border: "1px solid #ddd",
           padding: "5px",
-          width: "45vh",
+          position: "relative",
+          width: "25vh",
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          float: "right",
         }}
       />
       <p>
