@@ -4,7 +4,7 @@ import HomePage from "./components/homepage/homepage";
 import AboutUs from "./components/aboutus/about";
 import ReqList from "./components/reqlist/reqlist";
 import Form from "./components/module/Form";
-import LoginForm from "./components/login/loginform";
+
 import LoginForm2 from "./components/login2/login";
 import Footer from "./components/footer/footer";
 import Register from "./components/login2/logReg";
