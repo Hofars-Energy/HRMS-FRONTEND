@@ -30,10 +30,7 @@ export default function AboutUs() {
         pinpoint precision so you save not only time but also the capital.
       </p>
       <br />
-      <h2 style={{ letterSpacing: "5px", textAlign: "center" }}>Contact Us</h2>
-      <br />
-      <h3 style={{ letterSpacing: "3px" }}>Our Social Handles </h3>
-      {/* Various social handles here */}
+    
     </div>
   );
 }

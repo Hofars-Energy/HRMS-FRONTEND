@@ -363,7 +363,7 @@ class Form extends Component {
           </div>
           <br />
           <div className="text-center">
-          <input type="reset" />
+          //<input type="reset" />
           <input type="submit" value="Submit" />
           </div>
           
