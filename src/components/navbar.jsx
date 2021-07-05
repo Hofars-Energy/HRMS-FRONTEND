@@ -40,6 +40,17 @@ const Navbar = () => {
                 About Us
               </Link>
             </li>
+
+            <li className="nav-item">
+              <Link
+                to="/Approval"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Apporoval
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link
                 to="/Careers"

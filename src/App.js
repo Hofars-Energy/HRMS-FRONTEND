@@ -8,6 +8,7 @@ import LoginForm from "./components/login/loginform";
 import LoginForm2 from "./components/login2/login";
 import Footer from "./components/footer/footer";
 import Register from "./components/login2/logReg";
+import Approval from "./components/rms_approval/rms_approval";
 import {
   BrowserRouter as Router,
   Route,
@@ -29,6 +30,7 @@ function App() {
           <Route path="/login" exact component={LoginForm2} />
           <Route path="/projects" exact component={AboutUs} />
           <Route path="/login" exact component={AboutUs} />
+          <Route path="/approval" exact component={Approval} />
           <Redirect path="/" exact to="/home" />
         </Switch>
         <Footer />
