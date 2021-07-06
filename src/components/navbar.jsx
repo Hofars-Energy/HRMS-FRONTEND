@@ -61,6 +61,16 @@ const Navbar = () => {
               </Link>
             </li>
 
+            {/* <li className="nav-item">
+              <Link
+                to="/head_approval"
+                className="nav-links "
+                onClick={closeMobileMenu}
+              >
+                Talent Head Approval
+              </Link>
+            </li> */}
+
             <li className="nav-item">
               <Link to="/ATS" className="nav-links" onClick={closeMobileMenu}>
                 ATS
@@ -86,6 +96,7 @@ const Navbar = () => {
             >
               Login
             </Button>
+
           )}
         </div>
       </nav>

@@ -9,6 +9,7 @@ import LoginForm2 from "./components/login2/login";
 import Footer from "./components/footer/footer";
 import Register from "./components/login2/logReg";
 import Approval from "./components/rms_approval/rms_approval";
+import Head_Approval from "./components/talent_head_approval/talent_head_approval";
 import {
   BrowserRouter as Router,
   Route,
@@ -31,6 +32,7 @@ function App() {
           <Route path="/projects" exact component={AboutUs} />
           <Route path="/login" exact component={AboutUs} />
           <Route path="/approval" exact component={Approval} />
+          <Route path="/head_approval" exact component={Head_Approval} />
           <Redirect path="/" exact to="/home" />
         </Switch>
         <Footer />
