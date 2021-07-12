@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar style ={{position: "absolute", zIndex : "10"}} />
         <Switch>
           <Route path="/home" exact component={HomePage} />
           <Route path="/aboutus" exact component={AboutUs} />
