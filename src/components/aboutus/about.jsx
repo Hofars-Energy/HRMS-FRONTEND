@@ -1,39 +1,40 @@
 import React from "react";
-import img from "../../images/1.jpg";
+import "./aboutUs.css";
 
 export default function AboutUs() {
   return (
     <div>
-      <h1>About Page</h1>
-      <img
-        src={img}
-        alt="Hofars image"
-        style={{
-          border: "1px solid #ddd",
-          padding: "5px",
-          position: "relative",
-          width: "25vh",
-          display: "block",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      />
-      <p>
-        At Hofars, competency meets precision, and the real magic happens When
-        it comes to business, precision is treasured. Precision is what provides
-        a business with a set of defined objectives that it can meet to
-        accomplish greatness. However, precision is inadequate without
-        competency. Competency is what makes you stand out from the rest. At
-        Hofars, we strive to provide the best solutions to your business’s
-        needs. We do this by employing our competent team of experts who will
-        determine your requirements and provide ample solutions to those with
-        pinpoint precision so you save not only time but also the capital.
-      </p>
-      <br />
-      <h2 style={{ letterSpacing: "5px", textAlign: "center" }}>Contact Us</h2>
-      <br />
-      <h3 style={{ letterSpacing: "3px" }}>Our Social Handles </h3>
-      {/* Various social handles here */}
+    <main className = "page-content">
+    <section class="c-section">
+    <h2 class="c-section__title"><span>Our Services</span></h2>
+    <ul class="c-services">
+        <li class="c-services__item">
+            <h3>Information Technology</h3>
+            <p>We leverage the concept of mobile-first design. Through our work, we focus on designing an experience that works across different screen sizes.</p>
+        </li>
+        <li class="c-services__item">
+            <h3>Energy</h3>
+            <p>If you are unsure of how your app behaves, we can help by doing a detailed UX audit that will highlight most of the issues in your product. From there, we can take it further and fix all issues.</p>
+        </li>
+        <li class="c-services__item">
+            <h3>Customer Excellence</h3>
+            <p>We are Front End masters with a deep focus on HTML, CSS. The result of our work is a responsive, accessible, and performant websites. Either you have the design ready and want us to code it, or you want us to do both design and code, we&rsquo;re happy to do so.</p>
+        </li>
+        <li class="c-services__item">
+            <h3>Human Resource</h3>
+            <p>If you don&rsquo;t know what kind of service to request from us, don&rsquo;t worry. We can help and see what fits your business and your budget.</p>
+        </li>
+        <li class="c-services__item">
+            <h3>Mobile Apps Design</h3>
+            <p>To reach more customers and the goals of your business, a mobile application is necessary these days. We will work on the app design from scratch to final tested prototype.</p>
+        </li>
+        <li class="c-services__item">
+            <h3>UX Research</h3>
+            <p>It&rsquo;s important to research deeply for the product you want to build. We help in that by defining the user audience, working on user stories, competitive analysis and much more. </p>
+        </li>
+    </ul>
+</section>
+</main>
     </div>
   );
 }

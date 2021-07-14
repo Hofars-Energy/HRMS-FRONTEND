@@ -5,7 +5,7 @@ class HomePage extends Component {
   render() {
     return (
       <>
-        <HeroSection />
+        <HeroSection style={{position: "relative"}}/>
       </>
     );
   }

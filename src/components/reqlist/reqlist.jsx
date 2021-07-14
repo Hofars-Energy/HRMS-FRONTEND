@@ -41,12 +41,6 @@ class ReqList extends Component {
   render() {
     return (
       <div className="reqList">
-        {/* <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-          integrity="undefined"
-          crossorigin="anonymous"
-        /> */}
         <h1> RMS Request List </h1>
 
         <table className="table">

@@ -26,6 +26,7 @@ class Form extends Component {
       ctc: "",
       priority: "",
       specialization: "",
+      gender: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -44,19 +45,19 @@ class Form extends Component {
   };
   reqTypehandler = (event) => {
     this.setState({
-      Type: event.target.value,
+      requestType: event.target.value,
     });
   };
 
   depthandler = (event) => {
     this.setState({
-      dept: event.target.value,
+      department: event.target.value,
     });
   };
 
   positionClasshandler = (event) => {
     this.setState({
-      positionClass: event.target.value,
+      postionClass: event.target.value,
     });
   };
 
@@ -80,7 +81,7 @@ class Form extends Component {
 
   empTypehandler = (event) => {
     this.setState({
-      empType: event.target.value,
+      employmentType: event.target.value,
     });
   };
 
@@ -116,7 +117,7 @@ class Form extends Component {
 
   experiencehandler = (event) => {
     this.setState({
-      experience: event.target.value,
+      workExperience: event.target.value,
     });
   };
 
@@ -362,7 +363,7 @@ class Form extends Component {
           </div>
           <br />
           <div className="text-center">
-          <input type="reset" />
+          //<input type="reset" />
           <input type="submit" value="Submit" />
           </div>
           
