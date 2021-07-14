@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./navbar.css";
+import "./side-bar.css";
 import { react } from "@babel/types";
 
 const Sidebar= () => {
   return(
     <div class="side_bar">
     <div class="title">
-      <div class="logo">Hofars</div>
-      <label class=" button cancel" for="check"><i class="fas fa-times"></i></label>
+       <div class="logo">Hofars</div>
+      {/*<label class=" button cancel" for="check"><i class="fas fa-times"></i></label> */}
     </div>
     <ul>
           <li>

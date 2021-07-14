@@ -16,12 +16,18 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import Sidebar from "./components/side_bar";
 function App() {
   return (
     <>
       <Router>
-        <Navbar style ={{position: "absolute", zIndex : "10"}} />
-        <Switch>
+        <div className = "row tsb">
+          
+          <div className = "col lsb">
+          <Sidebar />
+        </div>
+        <div className= "col rsb">
+          <Switch>
           <Route path="/home" exact component={HomePage} />
           <Route path="/aboutus" exact component={AboutUs} />
           <Route path="/careers" exact component={AboutUs} />
@@ -35,8 +41,12 @@ function App() {
           <Route path="/head_approval" exact component={Head_Approval} />
           <Redirect path="/" exact to="/home" />
         </Switch>
-        <Footer />
+        
+        </div>
+        </div>
+        
       </Router>
+      <Footer />
     </>
   );
 }

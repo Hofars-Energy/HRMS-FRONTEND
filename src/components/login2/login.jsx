@@ -33,12 +33,12 @@ function LoginForm2({ Login, error }) {
     }
   };
   return (
-    <div>
+    <div className= "loginpage">
       <form onSubmit={submitHandler}>
-        <div className="form-inner">
+        <div className="form-innerlg">
           <h2>Login</h2>
           {error != "" ? <div className="error">{error}</div> : ""}
-          <div className="form-group">
+          <div className="form-grouplg">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -62,7 +62,7 @@ function LoginForm2({ Login, error }) {
               value={details.email}
             />
           </div> */}
-          <div className="form-group">
+          <div className="form-grouplg">
             <label htmlFor="password">Password:</label>
             <input
               type="password"

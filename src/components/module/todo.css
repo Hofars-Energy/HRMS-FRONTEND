@@ -7,7 +7,6 @@ h1 {
   font-size: 38px;
 }
 
-
 input[type="text"] {
   width: 20%;
   padding: 12px 20px;
@@ -132,6 +131,5 @@ label {
 br {
   display: block;
   margin: 10px 0;
-  line-height:22px;
+  line-height: 22px;
 }
-
