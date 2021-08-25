@@ -33,10 +33,10 @@ function Register({ Login, error }) {
   return (
     <div>
       <form onSubmit={submitHandler}>
-        <div className="form-inner">
+        <div className="form-innerlg">
           <h2>Login</h2>
           {error != "" ? <div className="error">{error}</div> : ""}
-          <div className="form-group">
+          <div className="form-grouplg">
             <label htmlFor="name">Name</label>
             <input
               type="text"
@@ -48,7 +48,7 @@ function Register({ Login, error }) {
               value={details.name}
             />
           </div>
-          <div className="form-group">
+          <div className="form-grouplg">
             <label htmlFor="email">Email:</label>
             <input
               type="email"
@@ -61,7 +61,7 @@ function Register({ Login, error }) {
               value={details.email}
             />
           </div>
-          <div className="form-group">
+          <div className="form-grouplg">
             <label htmlFor="password">Password:</label>
             <input
               type="password"
@@ -74,7 +74,7 @@ function Register({ Login, error }) {
               value={details.password}
             />
           </div>
-          <div className="form-group">
+          <div className="form-grouplg">
             <label htmlFor="password">Password:</label>
             <input
               type="password"
